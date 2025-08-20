@@ -1,0 +1,28 @@
+.nameChapter{
+    color: rgb(106, 106, 106);
+}
+
+.nameChapter:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.active{
+    text-decoration: underline solid black;
+    color: black;
+}
+
+.listMen{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 40px;
+    color: rgb(97, 95, 95);
+    white-space: nowrap;
+}
+
+.listMen li:hover{
+    color: black;
+    cursor: pointer;
+}

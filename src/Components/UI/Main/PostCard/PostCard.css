@@ -1,0 +1,23 @@
+.allPost{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.card{
+    border: 2px solid transparent;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card img{
+    height: auto;
+    width: 100%;
+}

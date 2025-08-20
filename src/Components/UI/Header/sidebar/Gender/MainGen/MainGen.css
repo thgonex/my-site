@@ -1,0 +1,47 @@
+.nameChapter{
+    color: rgb(106, 106, 106);
+}
+
+.nameChapter:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.active{
+    text-decoration: underline solid black;
+    color: black;
+}
+
+.listMain{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 40px;
+    color: rgb(97, 95, 95);
+    white-space: nowrap;
+}
+
+.listMain li:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.allPhotoMenu{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card1{
+    margin-left: 10px;
+}
+
+.phtotMenu{
+    margin-right: 40px;
+}
+
+.discountImg{
+    width: 200px;
+    height: auto;
+}

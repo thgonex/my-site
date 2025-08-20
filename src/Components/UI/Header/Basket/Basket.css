@@ -1,0 +1,135 @@
+.pngLogo {
+  height: 35px;
+  width: 35px;
+  margin-right: 25px;
+}
+
+.pngLogo:hover {
+  opacity: 80%;
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+.pngLogo:active {
+  transform: scale(0.9);
+}
+
+/* Верхний блок (шапка корзины) */
+.shopkoshik {
+  margin: 0 -20px;
+  padding: 5px 5px;
+  border-bottom: 1px solid #d1d1d1;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  z-index: 2;
+}
+
+/* Линия под заголовком */
+.custom-hr {
+  margin: 0 -20px;
+  border: none;
+  height: 1px;
+  background: #c4c4c4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Фон под модалкой */
+.modalBasket {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 15px;
+  z-index: 1000;
+}
+
+/* Сама модалка */
+.modalBasketContent {
+  position: relative;
+  margin: 10px;
+  background-color: #fff;
+  height: 500px;
+  width: 350px;
+  border-radius: 15px;
+  display: flex;           /* делаем флекс для правильного расположения */
+  flex-direction: column;
+  padding: 20px;
+  overflow: hidden;        /* чтобы ничего не вылазило */
+}
+
+/* Блок со всеми товарами */
+.allPostCardBasket {
+  flex: 1;                 /* занимает всё доступное место */
+  overflow-y: auto;        /* скроллим только внутри */
+  display: grid;
+  grid-template-columns: 1fr; /* один товар в ряд */
+  gap: 15px;
+  padding-right: 5px;
+  box-sizing: border-box;
+}
+
+/* Карточка товара */
+.cardBasket {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #e0e0e0;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cardBasket:first-child{
+  margin-top: 15px;
+}
+
+.cardBasket:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.cardBasket img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cardBasket p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.cardBasket p:last-child {
+  font-weight: bold;
+  color: #333;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  z-index: 1000;
+}
+
+.closeBtn:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+

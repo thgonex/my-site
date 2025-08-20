@@ -1,0 +1,171 @@
+.logoReg{
+    height: 31px;
+    width: 33px;
+    margin-right: 15px;
+}
+
+.logoReg:hover{
+    opacity: 80%;
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.logoReg:active{
+    transform: scale(0.9);
+}
+
+.modalReg{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.modalContent{
+    position: relative;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    width: 350px;
+    border-radius: 15px;
+    align-items: center;
+    padding: 20px;
+}
+
+.shopReg {
+  margin: 0 -20px;
+  padding: 5px 5px;
+  border-bottom: 1px solid #d1d1d1;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  z-index: 2;
+}
+
+.inputWrapper{
+    position: relative;
+    width: 300px;
+    margin: 20px 0;
+}
+
+.inputWrapper input{
+    width: 100%;
+    padding: 25px 12px 6px;
+    font-size: 16px;
+    border: none;
+    border-radius:8px;
+    outline: none;
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.inputWrapper label{
+    position: absolute;
+    left: 12px;
+    top: 14px;              
+    font-size: 16px;
+    color: #666;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    background: transparent; 
+    padding: 0;
+}
+
+.inputWrapper input:focus + label,
+.inputWrapper input:valid + label{
+    top: 4px;       
+    font-size: 12px;
+    color: #000;
+}
+
+
+.inputPass{
+    position: relative;
+    width: 300px;
+    margin: 20px 0;
+}
+
+.inputPass input{
+    width: 100%;
+    padding: 25px 12px 6px;
+    font-size: 16px;
+    border: none;
+    border-radius:8px;
+    outline: none;
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.inputPass label{
+    position: absolute;
+    left: 12px;
+    top: 14px;              
+    font-size: 16px;
+    color: #666;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    background: transparent; 
+    padding: 0;
+}
+
+.inputPass input:focus + label,
+.inputPass input:valid + label{
+    top: 4px;       
+    font-size: 12px;
+    color: #000;
+}
+
+.btnNext{
+    padding: 10px;
+    width: 323px;
+    background-color: #000;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.btnNext:hover{
+    opacity: 0.8;
+}
+
+
+.btnReg{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #000;
+    color: white;
+}
+
+.btnReg:hover{
+    opacity: 0.8;
+}
+
+.btnReg:active{
+    transform: scale(0.95);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.closeBtn:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
